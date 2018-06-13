@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Registrar</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <script src="JavaScript.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Cree una cuenta</div>
+      <div class="card-body">
+        <form id="form">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="pNombre">Nombre</label>
+                <input class="form-control" id="pNombre" type="text" aria-describedby="nameHelp" placeholder="Entre su nombre">
+              </div>
+              <div class="col-md-6">
+                <label for="pApellido">Apellidos</label>
+                <input class="form-control" id="pApellido" type="text" aria-describedby="nameHelp" placeholder="Entre su apellido">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo electronico</label>
+            <input class="form-control" id="correo" type="email" aria-describedby="emailHelp" placeholder="Entre su correo">
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="clave">Contraseña</label>
+                <input class="form-control" id="clave" type="password" placeholder="contraseña">
+              </div>
+              <div class="col-md-6">
+                <label for="clave1">Comfirme contraseña</label>
+                <input class="form-control" id="clave1" type="password" placeholder="confirme contraseña">
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" onclick="Registro()">Registrarse</a>
+        </form>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="login.html">Iniciar sesión</a>
+          <a class="d-block small" href="forgot-password.html">¿Olvido su contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
